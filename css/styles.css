@@ -1,7 +1,43 @@
+/*   Element Selectors   */
+
 main {
   display: grid;
-  max-width: 900px;
-  grid-template-columns: repeat(4, 200px);
-  grid-template-rows: repeat(4, 200px);
-  grid-gap: 25px 20px;
+  max-width: 1000px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: 100px repeat(3, 200px);
+  grid-gap: 30px 25px;
+  margin: 2em auto;
+  grid-template-areas: 
+    "search search search search"
+    "img img img img"
+    "img img img img"
+    "img img img img"
 }
+
+img {
+  border-radius: 3%;    
+}
+
+/*   Id Selectors   */
+
+#search-box {
+  height: 50px;
+  min-width: 500px;
+  padding-left: 15px;
+}
+
+/*   Class Selectors   */
+
+.searchField {
+  margin: auto; 
+}
+
+/*   Grid Areas   */
+form {
+  grid-area: search;    
+}
+
+img {
+  grid-area: img;    
+}
+
