@@ -1,17 +1,12 @@
 /*   Element Selectors   */
 
-main {
+.gallery {
   display: grid;
   max-width: 1000px;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-template-rows: 100px repeat(3, 200px);
+  grid-template-rows: repeat(3, 200px);
   grid-gap: 30px 25px;
   margin: 2em auto;
-  grid-template-areas: 
-    "search search search search"
-    "img img img img"
-    "img img img img"
-    "img img img img"
 }
 
 img {
@@ -29,15 +24,5 @@ img {
 /*   Class Selectors   */
 
 .searchField {
-  margin: auto; 
+  margin: 2em auto; 
 }
-
-/*   Grid Areas   */
-form {
-  grid-area: search;    
-}
-
-img {
-  grid-area: img;    
-}
-
