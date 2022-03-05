@@ -17,6 +17,7 @@ img {
 }
 
 /*   Class Selectors   */
+
 .gallery {
   display: grid;
   max-width: 1000px;
@@ -28,5 +29,13 @@ img {
 
 .searchField {
   margin: 2em auto;
-  max-width: 500px; 
+  max-width: 500px
+}
+
+/*   Media Queries   */
+
+@media screen and (max-width:600px) {
+  #search-box, .searchField {
+    width: 70%;    
+  }    
 }
