@@ -3,6 +3,10 @@
 }
 
 /*   Element Selectors   */
+body {
+  margin: 0;
+  padding: 0;    
+}
 
 img {
   border-radius: 3%;    
@@ -14,6 +18,8 @@ img {
   height: 50px;
   min-width: 500px;
   padding-left: 15px;
+  border: 2px solid rgb(108, 107, 107);
+  border-radius: 3px;
 }
 
 /*   Class Selectors   */
