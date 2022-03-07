@@ -8,18 +8,20 @@ body {
   padding: 0;    
 }
 
-img {
-  border-radius: 3%;    
+img {    
+  margin: 0 10px;
+  border-radius: 3%;
 }
 
 /*   Id Selectors   */
 
 #search {
   height: 50px;
-  min-width: 500px;
+  min-width: 40vw;
   padding-left: 15px;
   border: 2px solid rgb(108, 107, 107);
   border-radius: 3px;
+  font-size: 18px;
 }
 
 /*   Class Selectors   */
@@ -29,11 +31,12 @@ img {
   max-width: 1000px;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-template-rows: repeat(3, 200px);
-  grid-gap: 30px 25px;
+  grid-gap: 35px 20px;
   margin: 3em auto;
 }
 
 .searchField {
-  margin: 2em auto;
-  max-width: 500px
+  padding-left: 10px;
+  margin: 2rem auto;
+  max-width: 500px;
 }
